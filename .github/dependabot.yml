@@ -10,7 +10,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      time: "11:30"
+      time: "10:30"
+      day: "sunday"
     open-pull-requests-limit: 10
     labels:
       - "maven dependencies"
@@ -19,7 +20,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      time: "11:30"
+      day: "sunday"
+      time: "10:30"
     # Disable all pull requests for Docker dependencies
     open-pull-requests-limit: 0
     labels:
