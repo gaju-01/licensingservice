@@ -6,23 +6,14 @@
 version: 2
 updates:
   # Enable version updates for Maven
-  - package-ecosystem: "mvn"
+  - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "weekly"
       time: "11:30"
     open-pull-requests-limit: 10
     labels:
-      - "mvn dependencies"
-  # Enable version updates for Java
-  - package-ecosystem: "java"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      time: "11:30"
-    open-pull-requests-limit: 10
-    labels:
-      - "java dependencies"
+      - "maven dependencies"
   # Temporarily disable the version updates for Docker
   - package-ecosystem: "docker"
     directory: "/"
