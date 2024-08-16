@@ -14,11 +14,6 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - "mvn dependencies"
-    groups:
-      java:
-        applies-to: version-updates
-        patterns:
-          - "*"
   # Enable version updates for Java
   - package-ecosystem: "java"
     directory: "/"
