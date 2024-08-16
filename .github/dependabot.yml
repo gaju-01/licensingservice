@@ -8,16 +8,29 @@ updates:
   # Enable version updates for Maven
   - package-ecosystem: "maven"
     directory: "/"
+    # Scheduled 10:30 AM Sunday UTC weekly
     schedule:
       interval: "weekly"
-      time: "10:30"
       day: "sunday"
+      time: "10:30"
     open-pull-requests-limit: 10
     labels:
       - "maven dependencies"
+  # Enable version updates for Java and Gradle
+  - package-ecosystem: "gradle"
+    directory: "/"
+    # Scheduled 10:30 AM Sunday UTC weekly
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "10:30"
+    open-pull-requests-limit: 10
+    labels:
+      - "gradle dependencies"
   # Temporarily disable the version updates for Docker
   - package-ecosystem: "docker"
     directory: "/"
+    # Scheduled 10:30 AM Sunday UTC weekly
     schedule:
       interval: "weekly"
       day: "sunday"
