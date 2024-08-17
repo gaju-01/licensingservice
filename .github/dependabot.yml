@@ -18,7 +18,7 @@ updates:
     labels:
       - "maven dependencies"
     target-branch: "master"
-    assignees: "gaju-01"
+    assignees: ["gaju-01"]
     # adds prefix maven to every commit message
     commit-message:
       prefix: "maven"
@@ -41,7 +41,7 @@ updates:
     labels:
       - "gradle dependencies"
     target-branch: "master"
-    assignees: "gaju-01"
+    assignees: ["gaju-01"]
     # adds prefix maven to every commit message
     commit-message:
       prefix: "gradle"
@@ -65,7 +65,7 @@ updates:
     labels:
       - "docker dependencies"
     target-branch: "master"
-    assignees: "gaju-01"
+    assignees: ["gaju-01"]
     # adds prefix maven to every commit message
     commit-message:
       prefix: "docker"
