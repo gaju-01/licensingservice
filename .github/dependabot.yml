@@ -12,10 +12,22 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      time: "10:30"
+      time: "03:30"
+      timezone: "Asia/Kolkata"
     open-pull-requests-limit: 10
     labels:
       - "maven dependencies"
+    target-branch: "master"
+    assignees: "gaju-01"
+    # adds prefix maven to every commit message
+    commit-message:
+      prefix: "maven"
+    # groups the dependencies as production and development. If it belongs to neither, dependabot creates a separate pull request.
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   # Enable version updates for Java and Gradle
   - package-ecosystem: "gradle"
     directory: "/"
@@ -23,10 +35,22 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      time: "10:30"
+      time: "03:30"
+      timezone: "Asia/Kolkata"
     open-pull-requests-limit: 10
     labels:
       - "gradle dependencies"
+    target-branch: "master"
+    assignees: "gaju-01"
+    # adds prefix maven to every commit message
+    commit-message:
+      prefix: "gradle"
+    # groups the dependencies as production and development. If it belongs to neither, dependabot creates a separate pull request.
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
   # Temporarily disable the version updates for Docker
   - package-ecosystem: "docker"
     directory: "/"
@@ -34,8 +58,20 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      time: "10:30"
+      time: "03:30"
+      timezone: "Asia/Kolkata"
     # Disable all pull requests for Docker dependencies
     open-pull-requests-limit: 0
     labels:
       - "docker dependencies"
+    target-branch: "master"
+    assignees: "gaju-01"
+    # adds prefix maven to every commit message
+    commit-message:
+      prefix: "docker"
+    # groups the dependencies as production and development. If it belongs to neither, dependabot creates a separate pull request.
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
