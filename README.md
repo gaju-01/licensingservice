@@ -27,18 +27,20 @@ If you manually switch to a different parent and actually want the inheritance, 
 ## Docker 
 
 This project utilizes a multi-stage Docker build to efficiently create the application image. Instead of copying the entire jar file, the Dockerfile selectively copies the necessary dependencies, libraries, and compiled classes. This approach optimizes the build process and reduces the image size. The following dependency should be added to use the docker in our application,
+```
 <plugin>
   <groupId>com.spotify</groupId>
   <artifactId>dockerfile-maven-plugin</artifactId>
   <version>1.4.13</version>
 </plugin>
+```
 
-Construct the docker image:
+## Construct the docker image
 1. mvn clean
 2. mvn package
 3. mvn dockerfile:build
 
-Running the container:
+## Running the container:
 1. docker images
 2. docker run <image_id>
 3. docker ps
