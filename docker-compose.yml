@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  licensingservice:
+    image: microservice/licensingservice:0.0.1-SNAPSHOT
+    ports:
+      - "5001:5001"
+    environment:
+      SPRING_PROFILES_ACTIVE: "dev"
+      SPRING_CLOUD_CONFIG_URI: http://configserver:5000
+    networks:
+      backend:
+        aliases:
+          - "licenseservice"
+networks:
+  backend:
+     driver: bridge
