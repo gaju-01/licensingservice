@@ -6,7 +6,7 @@ services:
       - "5001:5001"
     environment:
       SPRING_PROFILES_ACTIVE: "dev"
-      SPRING_CLOUD_CONFIG_URI: http://configserver:5000
+      SPRING_CONFIG_IMPORT: configserver:http://localhost:8080
     networks:
       backend:
         aliases:
