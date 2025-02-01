@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.2</version>
+		<version>3.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.microservices</groupId>
@@ -29,7 +29,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<docker.image.prefix>microservice</docker.image.prefix>
-		<cloud.starter.version>4.1.3</cloud.starter.version>
+		<cloud.starter.version>4.2.0</cloud.starter.version>
 		<docker.version>1.4.13</docker.version>
 	</properties>
 	<dependencies>
